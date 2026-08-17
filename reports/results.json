@@ -1,0 +1,298 @@
+{
+  "n_train": 750,
+  "n_test": 250,
+  "train_default_rate": 0.3,
+  "test_default_rate": 0.3,
+  "lr_coefficients": [
+    {
+      "feature": "Checking account_ord",
+      "coefficient": 0.4705930546891938
+    },
+    {
+      "feature": "Duration",
+      "coefficient": 0.44436242279616905
+    },
+    {
+      "feature": "Purpose_education",
+      "coefficient": 0.2105618902030834
+    },
+    {
+      "feature": "Housing_own",
+      "coefficient": -0.191372152479122
+    },
+    {
+      "feature": "Purpose_radio/TV",
+      "coefficient": -0.15708807854151652
+    },
+    {
+      "feature": "Sex_male",
+      "coefficient": -0.14790375820027757
+    },
+    {
+      "feature": "Purpose_repairs",
+      "coefficient": 0.09993082777942566
+    },
+    {
+      "feature": "Age",
+      "coefficient": -0.08764142882881447
+    },
+    {
+      "feature": "Purpose_vacation/others",
+      "coefficient": -0.07506880939225637
+    },
+    {
+      "feature": "Purpose_furniture/equipment",
+      "coefficient": 0.03672147268419847
+    },
+    {
+      "feature": "Saving accounts_ord",
+      "coefficient": -0.03538721808494641
+    },
+    {
+      "feature": "Job",
+      "coefficient": -0.02833092295191866
+    },
+    {
+      "feature": "Purpose_domestic appliances",
+      "coefficient": 0.02773303683879036
+    },
+    {
+      "feature": "Purpose_car",
+      "coefficient": 0.02452867876017145
+    },
+    {
+      "feature": "Housing_rent",
+      "coefficient": 0.0222829500285291
+    },
+    {
+      "feature": "Credit amount",
+      "coefficient": -0.007177662530266861
+    }
+  ],
+  "lr_intercept": -0.9585480149207061,
+  "vif": [
+    {
+      "feature": "Purpose_car",
+      "VIF": 3.046007749309406
+    },
+    {
+      "feature": "Purpose_radio/TV",
+      "VIF": 2.807554757473913
+    },
+    {
+      "feature": "Housing_rent",
+      "VIF": 2.7321142390279163
+    },
+    {
+      "feature": "Housing_own",
+      "VIF": 2.648781393354247
+    },
+    {
+      "feature": "Purpose_furniture/equipment",
+      "VIF": 2.4468431905334147
+    },
+    {
+      "feature": "Credit amount",
+      "VIF": 1.9146821958702418
+    },
+    {
+      "feature": "Duration",
+      "VIF": 1.789909458928341
+    },
+    {
+      "feature": "Purpose_education",
+      "VIF": 1.549784265652169
+    },
+    {
+      "feature": "Purpose_repairs",
+      "VIF": 1.2208123002248878
+    },
+    {
+      "feature": "Age",
+      "VIF": 1.1403602513358784
+    },
+    {
+      "feature": "Purpose_domestic appliances",
+      "VIF": 1.1391321580373244
+    },
+    {
+      "feature": "Job",
+      "VIF": 1.1337647157341642
+    },
+    {
+      "feature": "Purpose_vacation/others",
+      "VIF": 1.1126986484874972
+    },
+    {
+      "feature": "Sex_male",
+      "VIF": 1.0982566039096957
+    },
+    {
+      "feature": "Saving accounts_ord",
+      "VIF": 1.0232268209893993
+    },
+    {
+      "feature": "Checking account_ord",
+      "VIF": 1.0190212869582693
+    }
+  ],
+  "max_vif": 3.046007749309406,
+  "metrics_lr_thr050": {
+    "AUC": 0.6832761904761904,
+    "KS": 0.299047619047619,
+    "Gini": 0.36655238095238074,
+    "threshold": 0.5,
+    "confusion_matrix": [
+      [
+        163,
+        12
+      ],
+      [
+        58,
+        17
+      ]
+    ],
+    "precision": 0.5862068965517241,
+    "recall": 0.22666666666666666,
+    "f1": 0.3269230769230769
+  },
+  "metrics_xgb_thr050": {
+    "AUC": 0.7795809523809524,
+    "KS": 0.4628571428571429,
+    "Gini": 0.5591619047619047,
+    "threshold": 0.5,
+    "confusion_matrix": [
+      [
+        151,
+        24
+      ],
+      [
+        41,
+        34
+      ]
+    ],
+    "precision": 0.5862068965517241,
+    "recall": 0.4533333333333333,
+    "f1": 0.5112781954887218
+  },
+  "metrics_lr_thr_ks_optimal": {
+    "AUC": 0.6832761904761904,
+    "KS": 0.299047619047619,
+    "Gini": 0.36655238095238074,
+    "threshold": 0.31186913941445105,
+    "confusion_matrix": [
+      [
+        120,
+        55
+      ],
+      [
+        29,
+        46
+      ]
+    ],
+    "precision": 0.45544554455445546,
+    "recall": 0.6133333333333333,
+    "f1": 0.5227272727272727
+  },
+  "metrics_xgb_thr_ks_optimal": {
+    "AUC": 0.7795809523809524,
+    "KS": 0.4628571428571429,
+    "Gini": 0.5591619047619047,
+    "threshold": 0.38278013467788696,
+    "confusion_matrix": [
+      [
+        137,
+        38
+      ],
+      [
+        24,
+        51
+      ]
+    ],
+    "precision": 0.5730337078651685,
+    "recall": 0.68,
+    "f1": 0.6219512195121951
+  },
+  "psi": [
+    {
+      "feature": "Age",
+      "PSI": 0.06809507072076096
+    },
+    {
+      "feature": "XGB_score",
+      "PSI": 0.04129139099281872
+    },
+    {
+      "feature": "Credit amount",
+      "PSI": 0.030907621588183207
+    },
+    {
+      "feature": "Saving accounts_ord",
+      "PSI": 0.026837608204789917
+    },
+    {
+      "feature": "LR_score",
+      "PSI": 0.024886345617187555
+    },
+    {
+      "feature": "Duration",
+      "PSI": 0.008805155950752704
+    },
+    {
+      "feature": "Checking account_ord",
+      "PSI": 4.3969336299573115e-05
+    }
+  ],
+  "calibration_lr": [
+    {
+      "predicted": 0.09346874392012071,
+      "observed": 0.08,
+      "n": 25
+    },
+    {
+      "predicted": 0.13509061882910364,
+      "observed": 0.2,
+      "n": 25
+    },
+    {
+      "predicted": 0.17122716676054664,
+      "observed": 0.16,
+      "n": 25
+    },
+    {
+      "predicted": 0.20786284420455073,
+      "observed": 0.32,
+      "n": 25
+    },
+    {
+      "predicted": 0.24645276163145852,
+      "observed": 0.24,
+      "n": 25
+    },
+    {
+      "predicted": 0.2855859692713102,
+      "observed": 0.2,
+      "n": 25
+    },
+    {
+      "predicted": 0.33531690272113657,
+      "observed": 0.36,
+      "n": 25
+    },
+    {
+      "predicted": 0.3927209220214442,
+      "observed": 0.32,
+      "n": 25
+    },
+    {
+      "predicted": 0.4646268946271256,
+      "observed": 0.48,
+      "n": 25
+    },
+    {
+      "predicted": 0.6561439318193993,
+      "observed": 0.64,
+      "n": 25
+    }
+  ]
+}
